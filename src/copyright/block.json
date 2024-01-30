@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "anonyengine-dynamic-blocks/copyright",
+	"version": "0.1.0",
+	"title": "Copyright Date Block",
+	"category": "widgets",
+	"description": "Display your site’s copyright date.",
+	"example": {},
+	"attributes": {
+		"copyrightText": {
+			"type": "string"
+		},
+		"fallbackCurrentYear": {
+			"type": "string"
+		},
+		"showStartingYear": {
+			"type": "boolean"
+		},
+		"startingYear": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": false,
+			"text": true
+		},
+		"html": false,
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"textdomain": "anonyengine-dynamic-blocks",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}
