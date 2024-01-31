@@ -1,5 +1,5 @@
 import { useBlockProps } from '@wordpress/block-editor';
-
+import { __ } from '@wordpress/i18n';
 export default function save( { attributes } ) {
 	const { fallbackCurrentYear, copyrightText, showStartingYear, startingYear } = attributes;
 
@@ -11,7 +11,7 @@ export default function save( { attributes } ) {
 	if ( copyrightText ) {
 		displayText = copyrightText;
 	} else {
-		displayText = 'All copyrights are resrved';
+		displayText = __( 'All copyrights are resrved', 'anonyengine-dynamic-blocks' );
 	}
 
 	let displayDate;

@@ -6,7 +6,30 @@
 	"title": "Products Loop",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Woocoomerce Products loop.",
+	"attributes": {
+		"productsIds": {
+			"type": "string"
+		},
+		"author": {
+			"type": "number"
+		},
+		"enableSlider": {
+			"type": "boolean"
+		},
+		"height": {
+			"type": "number"
+		},
+		"width": {
+			"type": "number"
+		},
+		"desktopItemWidth": {
+			"type": "number"
+		},
+		"mobileItemWidth": {
+			"type": "number"
+		}
+	},
 	"example": {},
 	"supports": {
 		"html": false
